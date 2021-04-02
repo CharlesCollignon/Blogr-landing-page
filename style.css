@@ -15,17 +15,16 @@ html,
 body {
   background-color: var(--neutral-white);
   font-family: Overpass;
-  color: var(--primary-very-dark-blue);
   font-size: 16px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 section {
   border: 1px solid red;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 100px;
+  margin-top: 200px;
   width: 100%;
-  overflow: hidden;
 }
 
 .container {
@@ -64,11 +63,10 @@ section {
   background-color: transparent;
 }
 
-/* FIRST SECTION */
+/* ------------------------------------- FIRST SECTION ------------------------------------ */
 .landing {
   width: 100%;
   margin: 0;
-  /* background: linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%)); */
   background-image: url("images/bg-pattern-intro.svg"),
     linear-gradient(130deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-blend-mode: luminosity;
@@ -134,12 +132,11 @@ section {
   font-size: 1.2em;
 }
 
-/* SECOND SECTION */
+/* -------------------------------- SECOND SECTION ----------------------------------- */
 .design-future {
   display: flex;
   flex-direction: column;
   text-align: center;
-  overflow: hidden;
 }
 
 .design-future h2 {
@@ -147,17 +144,98 @@ section {
 }
 
 .rows-second-section {
-  display: flex;
-  flex-direction: row-reverse;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "A B";
+  grid-gap: 20px;
 }
 
 .col-left {
-  width: 500px;
+  grid-area: A;
   text-align: left;
+  margin-left: 100px;
+  line-height: 1.8em;
+  width: 700px;
 }
 
 .col-right {
+  grid-area: B;
+  object-fit: cover;
+  margin-left: 150px;
+}
+
+/* ----------------------------------- THIRD SECTION ---------------------------------- */
+
+.infrastructure {
+  display: flex;
+  flex-direction: row;
+  background-image: url("images/bg-pattern-circles.svg");
+  background-color: var(--primary-very-dark-blue);
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -520px 82%;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  height: 380px;
+  align-items: center;
+  justify-items: center;
+}
+
+.infrastructure-text {
+  color: var(--neutral-white);
+  line-height: 1.8em;
+  margin: 100px;
+  text-align: left;
+}
+
+.infrastructure h2 {
+  font-size: 2.2em;
+}
+
+.infrastructure img {
   position: relative;
-  left: 30%;
-  top: -50px;
+  margin-left: 150px;
+}
+
+/* --------------------------------------- FOURTH SECTION ------------------------------------ */
+.free-powerful {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.free-text {
+  color: var(--primary-very-dark-blue);
+  line-height: 1.8em;
+  margin: 100px;
+  text-align: left;
+}
+
+.columns-free-powerful {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas: "B A";
+  grid-gap: 20px;
+}
+
+.col-righ-image {
+  grid-area: A;
+  text-align: left;
+  margin-left: 100px;
+  line-height: 1.8em;
+  width: 700px;
+}
+
+.col-left-text {
+  grid-area: B;
+  object-fit: cover;
+  margin-left: 150px;
 }
