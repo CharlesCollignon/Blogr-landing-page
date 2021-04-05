@@ -21,7 +21,6 @@ body {
 }
 
 section {
-  border: 1px solid red;
   margin-bottom: 100px;
   margin-top: 200px;
   width: 100%;
@@ -156,9 +155,10 @@ section {
 .col-left {
   grid-area: A;
   text-align: left;
-  margin-left: 100px;
   line-height: 1.8em;
   width: 700px;
+  margin-left: 150px;
+  min-width: 300px;
 }
 
 .col-right {
@@ -190,6 +190,7 @@ section {
   line-height: 1.8em;
   margin: 100px;
   text-align: left;
+  min-width: 300px;
 }
 
 .infrastructure h2 {
@@ -226,9 +227,8 @@ section {
   grid-gap: 20px;
 }
 
-.col-righ-image {
+.col-right-image {
   grid-area: A;
-  text-align: left;
   margin-left: 100px;
   line-height: 1.8em;
   width: 700px;
@@ -236,6 +236,39 @@ section {
 
 .col-left-text {
   grid-area: B;
-  object-fit: cover;
   margin-left: 150px;
+  min-width: 300px;
+}
+
+/* --------------------------- FOOTER ---------------------------------- */
+.footer {
+  background-color: var(--neutral-vd-black-blue);
+  border-top-right-radius: 100px;
+  margin-top: 100px;
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.logo-footer {
+  height: 100%;
+}
+
+.footer h3 {
+  color: var(--neutral-white);
+  margin-top: 0;
+}
+
+.footer ul {
+  color: var(--neutral-grayish-blue);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  margin-top: 20px;
 }
