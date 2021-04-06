@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css components/navbar.css" />
 
     <title>Frontend Mentor | [Blogr]</title>
   </head>
@@ -24,20 +25,89 @@
             <img src="images/logo.svg" alt="logo-blogr" />
 
             <div class="three-items">
-              <a href="#">Product</a>
-              <img
-                src="images/icon-arrow-light.svg"
-                style="zoom: 0.2"
-                class="white-arrow"
-              />
-              <div class="dropdown-content">
-                <a href="#">Overview</a>
-                <a href="#">Pricing</a>
-                <a href="#">Marketplace</a>
-                <a href="#">Features</a>
-                <a href="#">Integration</a>
+              <div class="dropdown">
+                <a href="#">Product</a>
+                <img
+                  src="images/icon-arrow-light.svg"
+                  style="zoom: 0.2"
+                  class="white-arrow"
+                />
+                <div class="dropdown-content">
+                  <a href="#">Overview</a>
+                  <a href="#">Pricing</a>
+                  <a href="#">Marketplace</a>
+                  <a href="#">Features</a>
+                  <a href="#">Integration</a>
+                </div>
               </div>
 
+              <div class="dropdown">
+                <a href="#">Company</a>
+                <img
+                  src="images/icon-arrow-light.svg"
+                  style="zoom: 0.2"
+                  class="white-arrow"
+                />
+                <div class="dropdown-content">
+                  <a href="#">About</a>
+                  <a href="#">Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+
+              <div class="dropdown">
+                <a href="#">Connect</a>
+                <img
+                  src="images/icon-arrow-light.svg"
+                  style="zoom: 0.2"
+                  class="white-arrow"
+                />
+                <div class="dropdown-content">
+                  <a href="#">Contact</a>
+                  <a href="#">Newsletter</a>
+                  <a href="#">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-list">
+            <button class="btn login">Login</button>
+            <button class="btn white">Sign Up</button>
+          </div>
+
+          <div class="hamburger-close">
+            <img
+              src="images/icon-hamburger.svg"
+              alt="hamburger menu"
+              class="hamburger"
+              style="zoom: 0.6"
+            />
+            <img
+              src="images/icon-close.svg"
+              alt="close"
+              class="close"
+              style="zoom: 0.6"
+            />
+          </div>
+        </div>
+
+        <div class="mobile-menu">
+          <div class="dropdown">
+            <a href="#">Product</a>
+            <img
+              src="images/icon-arrow-light.svg"
+              style="zoom: 0.2"
+              class="white-arrow"
+            />
+            <div class="dropdown-content">
+              <a href="#">Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integration</a>
+            </div>
+            <div class="dropdown">
               <a href="#">Company</a>
               <img
                 src="images/icon-arrow-light.svg"
@@ -49,7 +119,9 @@
                 <a href="#">Team</a>
                 <a href="#">Blog</a>
               </div>
+            </div>
 
+            <div class="dropdown">
               <a href="#">Connect</a>
               <img
                 src="images/icon-arrow-light.svg"
@@ -62,11 +134,6 @@
                 <a href="#">LinkedIn</a>
               </div>
             </div>
-          </div>
-
-          <div class="right-list">
-            <button class="btn login">Login</button>
-            <button class="btn white">Sign Up</button>
           </div>
         </div>
 
@@ -89,6 +156,7 @@
               src="images/illustration-editor-desktop.svg"
               alt="csv image"
               srcset="images/illustration-editor-mobile.svg 400w"
+              style="zoom: 0.9"
             />
           </div>
 
