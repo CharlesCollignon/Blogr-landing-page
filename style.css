@@ -103,7 +103,7 @@ section {
 /* ------------------------------------- LANDING SECTION ------------------------------------ */
 .landing {
   width: 100%;
-  margin: 0;
+  margin-top: 0;
   background-image: url("images/bg-pattern-intro.svg"),
     linear-gradient(130deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-blend-mode: luminosity;
@@ -178,7 +178,8 @@ section {
 
 @media (max-width: 1200px) {
   .hero h1 {
-    font-size: 3em;
+    font-size: 2.2em;
+    padding: 0 5vw;
   }
 }
 
@@ -186,6 +187,7 @@ section {
   color: var(--neutral-white);
   margin-top: 5px;
   font-size: 1.2em;
+  padding: 1em 5vw;
 }
 
 /* -------------------------------- SECOND SECTION ----------------------------------- */

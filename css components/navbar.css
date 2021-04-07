@@ -82,15 +82,46 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
     margin-top: 100px;
+    border-radius: 5px;
     background-color: var(--neutral-white);
     align-items: center;
     text-align: center;
+    align-self: center;
   }
 
   .mobile-menu.active a {
     color: hsl(208, 49%, 24%);
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+
+  .buttons-mobile-menu {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    border-top: 1px solid lightgrey;
+  }
+
+  .buttons-mobile-menu .login {
+    color: hsl(208, 49%, 24%);
+    margin: 1em auto 10px auto;
+  }
+
+  .buttons-mobile-menu .white {
+    margin: 0 auto 20px auto;
+    color: var(--neutral-white);
+    background: linear-gradient(
+      140deg,
+      hsl(355, 100%, 74%),
+      hsl(356, 100%, 66%)
+    );
+  }
+
+  .mobile-menu .dropdown {
+    padding: 1em;
   }
 }
